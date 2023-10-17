@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './styles/globals.css'
+import Navbar from './components/Navbar'
+import MyProfilePic from './components/MyProfilePic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +19,8 @@ export default function RootLayout({
   return (
     <html className='dark' lang="en">
       <body className={` dark:bg-slate-800 ${inter.className}`}>
+        <Navbar />
+        <MyProfilePic />
         {children}
       </body>
     </html>
