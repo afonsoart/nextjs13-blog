@@ -1,4 +1,4 @@
-import React from 'react'
+import Posts from "./components/Posts"
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
           I'm <span className='font-bold'>Afonso</span>
         </span>
       </p>
+      <Posts/>
     </main>
   )
 }
